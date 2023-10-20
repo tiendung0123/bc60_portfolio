@@ -1,0 +1,171 @@
+/* Global  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Sử lý các vấn đề liên quan về khoảng cách, width luôn đươc 100%. không có bị tràn */
+}
+
+html,
+body {
+    font-family: 'Hind', sans-serif;
+    color: #212529;
+    line-height: 1.5;
+    background-color: white;
+}
+
+/* HEARDER  */
+header {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+.navbar-brand i {
+    font-size: 45px;
+    color: #35a22c;
+}
+
+.navbar-brand span {
+    font-size: 36px;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+/* Chưa hover  */
+#navbarPort .nav-item .nav-link {
+    color: white;
+    transition: all .5s;
+}
+
+/* Sau hover */
+#navbarPort .nav-item:hover .nav-link {
+    color: #35a22c;
+}
+
+/* Tạo đường gạch */
+#navbarPort .nav-item .nav-link::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: #35a22c;
+    display: block;
+    /* Để không bị ảnh hưởng code BS4 */
+    transition: all .5s;
+}
+
+#navbarPort .nav-item:hover .nav-link::after {
+    width: 100%;
+}
+
+/* CAROUSEL  */
+.carouselPort .carousel-item {
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.carouselPort .carousel-item:nth-child(1) {
+    background-image: url(../img/mountains.jpg);
+}
+
+.carouselPort .carousel-item:nth-child(2) {
+    background-image: url(../img/mountains-1.jpg);
+}
+
+.carouselPort .carousel-item:nth-child(3) {
+    background-image: url(../img/finland.jpg);
+}
+
+.carouselPort .img_thum {
+    width: 140px;
+    margin: 0 auto;
+}
+
+.carouselPort .img_thum img {
+    border-radius: 50%;
+
+}
+
+.carousel-caption h3 {
+    font-size: 56px;
+    line-height: 65px;
+}
+
+.carousel-caption p {
+    font-size: 24px;
+}
+
+.carouselPort .carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active {
+    background-color: green;
+}
+
+/* Projects  */
+.project__content .card {
+    margin-top: 30px;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0 0.4rem rgba(0, 0, 0, .13);
+    border: none;
+    cursor: pointer;
+}
+
+.project__content .card .card-body {
+    border: 1px solid transparent;
+    text-align: center;
+    transition: all 0.5s;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.project__content .card:hover .card-body {
+    border: 1px solid green;
+    border-top-color: transparent;
+}
+
+.project__content .card .card-body h4 {
+    font-size: 1.2rem;
+}
+
+.nav {
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 575px) {
+    .project__content .card-body .card-title {
+        font-size: 1rem;
+    }
+}
+
+.project__content .nav-pills .nav-link {
+    border: 1px solid black;
+    color: black;
+    margin: 0 10px;
+}
+
+.project__content .nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: green;
+    color: white;
+    border-color: green;
+}
+
+@media screen and (max-width: 767px) {
+    .project__content .nav-pills .nav-link {
+        margin: 0 5px;
+    }
+}
