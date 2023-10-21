@@ -169,3 +169,152 @@ header {
         margin: 0 5px;
     }
 }
+
+/* Update css by Lam  */
+.project__content {
+    margin-bottom: 50px;
+}
+
+/* Service  */
+.service {
+    background: url(../img/3.jpg) no-repeat center;
+    background-size: cover;
+    padding: 100px 0 120px;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.service .overlay {
+    background: rgba(7, 10, 12, .5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.service .heading {
+    position: relative;
+    max-width: 750px;
+    text-align: center;
+}
+
+.service .heading h2 {
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 600;
+}
+
+.service .heading p {
+    line-height: 24px;
+}
+
+.service__item i {
+    color: #35a22c;
+    font-size: 48px;
+}
+
+.service__item {
+    padding: 40px 40px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .1);
+    border: 1px solid rgba(255, 255, 255, .1);
+    backdrop-filter: blur(3px);
+    transition: all 0.5s;
+}
+
+.service__item:hover {
+    background: black;
+}
+
+.service__item h4 {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 25px;
+    font-weight: 800;
+}
+
+.service__item p {
+    font-size: 15px;
+    line-height: 24px;
+    padding-top: 15px;
+}
+
+/* AWARD */
+.award {
+    position: relative;
+    padding: 70px 0 70px 0;
+}
+
+.award__bg {
+    background-image: url(../img/memphis_3.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.award__left {
+    background: rgba(255, 255, 255, .25);
+    border: 1px solid rgba(255, 255, 255, .18);
+    border-radius: 10px;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, .3);
+    padding: 45px;
+    backdrop-filter: blur(3px);
+}
+
+.award__left h2 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 42px;
+}
+
+.award__left p {
+    line-height: 24px;
+}
+
+.award__right {
+    padding-top: 45px;
+}
+
+/* FOOTER  */
+footer {
+    background: black;
+}
+    
+
+.footer__content {
+    border-bottom: 1px solid #454545;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+}
+
+.footer__content a {
+    /* text-decoration: none; */
+    margin-right: 10px;
+}
+
+.footer__content i {
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid #454545;
+    transition: all 0.5s;
+}
+
+.footer__content a:hover i {
+    border-color: #35a22c;
+    color: #35a22c;
+}
+
+.copyright {
+    color: #aaa;
+    padding-top: 20px;
+}
